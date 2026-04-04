@@ -1,6 +1,73 @@
 @gimDeportivo_HostAddress = http://localhost:5124
 
-GET {{gimDeportivo_HostAddress}}/weatherforecast/
-Accept: application/json
+AuthController
+POST http://localhost:5124/api/auth/login
+(otorga un token de autorizacion al final de la consulta)
 
+UsuarioController
+GET http://localhost:5124/api/usuario
+Autorización: ADMIN, ENTRENADOR.
+
+GET http://localhost:5124/api/usuario/{id}
+Autorización: ADMIN, ENTRENADOR.
+
+POST http://localhost:5124/api/usuario
+Autorización: ADMIN.
+
+PUT http://localhost:5124/api/usuario/{id}
+Autorización: ADMIN.
+
+DELETE http://localhost:5124/api/usuario/{id}
+Autorización: ADMIN.
+
+
+MembresiaController
+GET http://localhost:5124/api/membresia
+Autorización: ADMIN, ENTRENADOR, SOCIO.
+
+GET http://localhost:5124/api/membresia/{id}
+Autorización: ADMIN, ENTRENADOR, SOCIO.
+
+POST http://localhost:5124/api/membresia
+Autorización: ADMIN.
+
+PUT http://localhost:5124/api/membresia/{id}
+Autorización: ADMIN.
+
+DELETE http://localhost:5124/api/membresia/{id}
+Autorización: ADMIN.
+
+
+RegistroController
+GET http://localhost:5124/api/registro
+Autorización: ADMIN, ENTRENADOR, SOCIO.
+
+GET http://localhost:5124/api/registro/{id}
+Autorización: ADMIN, ENTRENADOR, SOCIO.
+
+POST http://localhost:5124/api/registro
+Autorización: ADMIN, ENTRENADOR.
+
+PUT http://localhost:5124/api/registro/{id}
+Autorización: ADMIN, ENTRENADOR.
+
+DELETE http://localhost:5124/api/registro/{id}
+Autorización: ADMIN.
+
+
+RolesController
+GET http://localhost:5124/api/Roles
+Autorización: ADMIN.
+
+GET http://localhost:5124/api/Roles/{id}
+Autorización: ADMIN.
+
+POST http://localhost:5124/api/Roles
+Autorización: ADMIN.
+
+PUT http://localhost:5124/api/Roles/{id}
+Autorización: ADMIN.
+
+DELETE http://localhost:5124/api/Roles/{id}
+Autorización: ADMIN.
 ###

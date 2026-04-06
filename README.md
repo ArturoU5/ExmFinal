@@ -201,7 +201,7 @@ gimDeportivo/
 
 ## 📦 Repositorio
 
-🔗 [https://github.com/TU_USUARIO/gimDeportivo][(https://github.com/TU_USUARIO/gimDeportivo](https://github.com/ArturoU5/ExmFinal.git))
+🔗 (([https://github.com/ArturoU5/ExmFinal.git]))
 
 
 

@@ -22,7 +22,7 @@ namespace Gimnasio.Controllers
         [Authorize(Roles = "ADMIN,ENTRENADOR")]
         public async Task<IActionResult> Get()
         {
-            var rutinas = await _context.Rutinas.Where(r => r.IsActive).ToListAsync();
+            var rutinas = await _context.Rutinas.Where(r => r.Activa).ToListAsync();
             return Ok(rutinas);
         }
 
@@ -139,7 +139,7 @@ namespace Gimnasio.Controllers
             existingRutina.Objetivo = rutina.Objetivo;
             existingRutina.FechaInicio = rutina.FechaInicio;
             existingRutina.FechaFin = rutina.FechaFin;
-            existingRutina.IsActive = rutina.IsActive;
+            existingRutina.Activa = rutina.Activa;
 
             try
             {

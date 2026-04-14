@@ -7,7 +7,6 @@ using Gimnasio.Data;
 using Gimnasio.Models;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.AspNetCore.Authorization;
-using Gimnasio.Models;
 
 namespace Gimnasio.Controllers
 {

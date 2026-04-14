@@ -33,12 +33,11 @@ namespace Gimnasio.Models
         public DateOnly FechaInicio { get; set; }
 
 
-        [Required(ErrorMessage = "Debe ingresar la fecha de fin de la rutina.")]
         public DateOnly? FechaFin { get; set; }
 
 
         [Required(ErrorMessage = "Debe ingresar el estado de la rutina.")]
-        public bool IsActive { get; set; } = true;
+        public bool Activa { get; set; } = true;
 
 
         [Required(ErrorMessage = "Debe ingresar la fecha de creación de la rutina.")]
